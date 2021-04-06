@@ -8,4 +8,15 @@ const getName = () => {
   return name;
 };
 
-export default getName;
+const evenRules = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
+
+const wrong = (name, answer, correctAnswer) => {
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
+  console.log(`Let's try again, ${name}!`);
+};
+
+const correct = () => console.log('Correct!');
+
+export {
+  getName, evenRules, wrong, correct,
+};
