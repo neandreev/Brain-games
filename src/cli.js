@@ -8,7 +8,11 @@ const getName = () => {
   return name;
 };
 
+const getAnswer = () => readlineSync.question('Your answer: ');
+const showQuestion = (question) => console.log(`Question: ${question}`);
+
 const evenRules = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const calcRules = () => console.log('What is the result of the expression?');
 
 const wrong = (name, answer, correctAnswer) => {
   console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
@@ -16,7 +20,8 @@ const wrong = (name, answer, correctAnswer) => {
 };
 
 const correct = () => console.log('Correct!');
+const congrats = (name) => console.log(`Congratulations, ${name}!`);
 
 export {
-  getName, evenRules, wrong, correct,
+  getName, getAnswer, showQuestion, evenRules, calcRules, wrong, correct, congrats,
 };
