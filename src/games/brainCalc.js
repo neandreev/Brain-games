@@ -1,6 +1,6 @@
 import _ from 'lodash';
-import { calcRules } from './cli.js';
-import playGame from './engine.js';
+import { calcRules } from '../cli.js';
+import playGame from '../engine.js';
 
 const getRandomExpression = () => {
   const expressions = [
