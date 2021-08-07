@@ -1,6 +1,6 @@
 # Brain-games
-[![Maintainability](https://api.codeclimate.com/v1/badges/0164fb3f8a235fd45970/maintainability)](https://codeclimate.com/github/neandreev/Brain-games/maintainability)
 [![Actions Status](https://github.com/neandreev/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/neandreev/frontend-project-lvl1/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0164fb3f8a235fd45970/maintainability)](https://codeclimate.com/github/neandreev/Brain-games/maintainability)
 
 ## Что это:
 Набор из пяти command-line приложений, завязанных на математике
