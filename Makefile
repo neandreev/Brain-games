@@ -1,6 +1,15 @@
 install:
 	npm install
 
+publish:
+	npm publish --dry-run
+
+link:
+	npm link --force
+
+unlink:
+	npm unlink brain-games --global
+
 ci:
 	npm ci
 
@@ -21,9 +30,6 @@ brain-progression:
 
 brain-prime:
 	node src/bin/brain-prime.js
-
-publish:
-	npm publish --dry-run
 
 lint:
 	npx eslint .

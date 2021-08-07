@@ -11,5 +11,23 @@
     - [readline-sync](https://github.com/anseki/readline-sync) (мини-библиотека, позволяющая получать текстовые данные от пользователя через консоль)
  - [Eslint](https://github.com/eslint/eslint)
 
+## Как это работает:
+```sh
+Установка: (внутри директории с исходным кодом)
+   make install
+   make publish
+   make link
+
+Удаление: (внутри директории с исходным кодом)
+   make unlink
+
+Использование: (просто введите в терминале название одной из игры)
+   brain-calc
+   brain-even
+   brain-gcd
+   brain-prime
+   brain-progressing
+```
+
 ## Как это выглядит:
 <img src="https://neandreev.ru/images/Brain-games.gif" alt="Brain-games" width="600"/>
