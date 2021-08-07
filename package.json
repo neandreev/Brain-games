@@ -1,7 +1,7 @@
 {
   "name": "brain-games",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/neandreev/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/neandreev/frontend-project-lvl1/actions)",
+  "description": "CLI mathematical games",
   "main": "index.js",
   "type": "module",
   "scripts": {
