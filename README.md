@@ -1,5 +1,5 @@
 # Brain-games
-[![Actions Status](https://github.com/neandreev/brain-games/workflows/hexlet-check/badge.svg)](https://github.com/neandreev/brain-games/actions)
+[![Actions Status](https://github.com/neandreev/brain-games/workflows/Eslint/badge.svg)](https://github.com/neandreev/brain-games/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0164fb3f8a235fd45970/maintainability)](https://codeclimate.com/github/neandreev/Brain-games/maintainability)
 
 ## Что это:
