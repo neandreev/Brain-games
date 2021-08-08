@@ -1,17 +1,21 @@
 # Brain-games
+
 [![Eslint](https://github.com/neandreev/Brain-games/actions/workflows/eslint.yml/badge.svg?branch=main)](https://github.com/neandreev/Brain-games/actions/workflows/eslint.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0164fb3f8a235fd45970/maintainability)](https://codeclimate.com/github/neandreev/Brain-games/maintainability)
 
-## Что это:
+## Что это
+
 Набор из пяти command-line приложений, завязанных на математике
 
-## Как это:
- - JS с минимумом библиотечных зависимостей
-    - [lodash](https://github.com/lodash/lodash)
-    - [readline-sync](https://github.com/anseki/readline-sync) (мини-библиотека, позволяющая получать текстовые данные от пользователя через консоль)
- - [Eslint](https://github.com/eslint/eslint)
+## Как это
 
-## Как это работает:
+- JS с минимумом библиотечных зависимостей
+  - [lodash](https://github.com/lodash/lodash)
+  - [readline-sync](https://github.com/anseki/readline-sync) (мини-библиотека, позволяющая получать текстовые данные от пользователя через консоль)
+- [Eslint](https://github.com/eslint/eslint)
+
+## Как это работает
+
 ```sh
 Установка: (внутри директории с исходным кодом)
    make install
@@ -29,5 +33,6 @@
    brain-progressing
 ```
 
-## Как это выглядит:
+## Как это выглядит
+
 <img src="https://neandreev.ru/images/Brain-games.gif" alt="Brain-games" width="600"/>
