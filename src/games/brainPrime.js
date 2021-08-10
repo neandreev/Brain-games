@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { primeRules } from '../cli.js';
-import playGame from '../engine.js';
+import startGame from '../engine.js';
 
 const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
@@ -22,5 +22,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  playGame(primeRules, getQuestionAndAnswer);
+  startGame(primeRules, getQuestionAndAnswer);
 };

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { progressionRules } from '../cli.js';
-import playGame from '../engine.js';
+import startGame from '../engine.js';
 
 const makeProgression = (startNum, progressionGap) => {
   const progressionArray = [];
@@ -35,5 +35,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  playGame(progressionRules, getQuestionAndAnswer);
+  startGame(progressionRules, getQuestionAndAnswer);
 };

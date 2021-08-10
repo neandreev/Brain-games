@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { calcRules } from '../cli.js';
-import playGame from '../engine.js';
+import startGame from '../engine.js';
 
 const getRandomExpression = () => {
   const expressions = [
@@ -27,5 +27,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  playGame(calcRules, getQuestionAndAnswer);
+  startGame(calcRules, getQuestionAndAnswer);
 };

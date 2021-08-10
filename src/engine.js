@@ -2,7 +2,7 @@ import {
   requestAnswer, requestName, showQuestion, declaration,
 } from './cli.js';
 
-const playGame = (showRules, getQuestionAndAnswer) => {
+const startGame = (showRules, getQuestionAndAnswer) => {
   const playerName = requestName();
   showRules();
 
@@ -24,4 +24,4 @@ const playGame = (showRules, getQuestionAndAnswer) => {
   declaration.congrats(playerName);
 };
 
-export default playGame;
+export default startGame;

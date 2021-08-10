@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { evenRules } from '../cli.js';
-import playGame from '../engine.js';
+import startGame from '../engine.js';
 
 const isEven = (num) => (num % 2 === 0);
 const getCorrectAnswer = (boolean) => ((boolean) ? 'yes' : 'no');
@@ -16,5 +16,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  playGame(evenRules, getQuestionAndAnswer);
+  startGame(evenRules, getQuestionAndAnswer);
 };

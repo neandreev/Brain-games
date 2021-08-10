@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { gcdRules } from '../cli.js';
-import playGame from '../engine.js';
+import startGame from '../engine.js';
 
 const getGcd = (a, b) => {
   if (!b) {
@@ -23,5 +23,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-  playGame(gcdRules, getQuestionAndAnswer);
+  startGame(gcdRules, getQuestionAndAnswer);
 };
