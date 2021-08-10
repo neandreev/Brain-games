@@ -11,12 +11,15 @@ const getGcd = (a, b) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const firstRandomInt = _.random(20);
-  const secondRandomInt = _.random(20);
+  const firstRandomInt = _.random(1, 20);
+  const secondRandomInt = _.random(1, 20);
   const question = `${firstRandomInt} ${secondRandomInt}`;
-  const correctAnswer = getGcd(firstRandomInt, secondRandomInt);
+  const correctAnswer = getGcd(firstRandomInt, secondRandomInt).toString();
 
-  return [question, correctAnswer.toString()];
+  return {
+    question,
+    correctAnswer,
+  };
 };
 
 export default () => {

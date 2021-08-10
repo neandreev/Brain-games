@@ -9,7 +9,10 @@ const getQuestionAndAnswer = () => {
   const randomInt = _.random(20);
   const correctAnswer = getCorrectAnswer(isEven(randomInt));
 
-  return [randomInt, correctAnswer];
+  return {
+    question: randomInt,
+    correctAnswer,
+  };
 };
 
 export default () => {

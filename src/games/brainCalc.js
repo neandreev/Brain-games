@@ -18,9 +18,12 @@ const getQuestionAndAnswer = () => {
   const randomExpression = getRandomExpression();
 
   const question = `${firstRandomInt} ${randomExpression[0]} ${secondRandomInt}`;
-  const correctAnswer = randomExpression[1](firstRandomInt, secondRandomInt);
+  const correctAnswer = randomExpression[1](firstRandomInt, secondRandomInt).toString();
 
-  return [question, correctAnswer.toString()];
+  return {
+    question,
+    correctAnswer,
+  };
 };
 
 export default () => {

@@ -8,13 +8,17 @@ const isPrime = (num) => {
   }
   return num > 1;
 };
+
 const getCorrectAnswer = (boolean) => ((boolean) ? 'yes' : 'no');
 
 const getQuestionAndAnswer = () => {
   const randomInt = _.random(100);
   const correctAnswer = getCorrectAnswer(isPrime(randomInt));
 
-  return [randomInt, correctAnswer];
+  return {
+    question: randomInt,
+    correctAnswer,
+  };
 };
 
 export default () => {

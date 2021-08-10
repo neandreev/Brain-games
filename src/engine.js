@@ -1,26 +1,27 @@
 import {
-  getAnswer, getName, showQuestion, correct, wrong, congrats,
+  requestAnswer, requestName, showQuestion, declaration,
 } from './cli.js';
 
-const playGame = (rules, getQuestionAndAnswer) => {
-  const name = getName();
-  rules();
+const playGame = (showRules, getQuestionAndAnswer) => {
+  const playerName = requestName();
+  showRules();
 
-  for (let i = 0; i < 3; i += 1) {
-    const [question, correctAnswer] = getQuestionAndAnswer();
+  const amountOfPlays = 3;
+  for (let i = 0; i < amountOfPlays; i += 1) {
+    const { question, correctAnswer } = getQuestionAndAnswer();
 
     showQuestion(question);
-    const answer = getAnswer();
+    const answer = requestAnswer();
 
     if (answer === correctAnswer) {
-      correct();
+      declaration.correct();
     } else {
-      wrong(name, answer, correctAnswer);
+      declaration.wrong(playerName, answer, correctAnswer);
       return;
     }
   }
 
-  congrats(name);
+  declaration.congrats(playerName);
 };
 
 export default playGame;
